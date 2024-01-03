@@ -5,6 +5,17 @@
   padding: 20px;
   z-index: 1; /* Set a lower z-index for the headers */
 }
+
+.upload-button {
+  position: absolute;
+  top: 265px;
+  right:15px;
+  z-index: 2;
+}
+
+#uploadButton {
+  padding: 10px;
+}
 .header-logo {
   position: absolute;
   top: 10px;
@@ -48,6 +59,7 @@
     padding: 20px;
     border-left: 2px solid #ccc;
     margin-bottom: 30px;
+    
   }
   
 
