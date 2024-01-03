@@ -1,0 +1,154 @@
+.header {
+  position: relative;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  z-index: 1; /* Set a lower z-index for the headers */
+}
+.header-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Adjust the height as needed */
+}
+
+.header-text {
+  text-align: center;
+  color: #333;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 55px;
+  margin: 0;
+  display: inline-block;
+
+}
+.connecting-line:before {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #ff3366;
+  margin: 0 auto;
+  z-index: 1; /* Set a lower z-index for the connecting line */
+}
+.header-text::first-letter {
+  font-size: 65px;
+  font-weight: 700;
+  color: #ff3366;
+}
+
+
+.timeline {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding: 20px;
+    border-left: 2px solid #ccc;
+    margin-bottom: 30px;
+  }
+  
+
+  
+  .timeline-date {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .timeline-time {
+    color: #888;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .timeline-photo {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+
+  .timeline-content {
+    text-align: center; /* Center the text and description */
+}
+
+.timeline-description {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+  .photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .portrait-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeline-photo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Adjust the gap between photos as needed */
+  }
+  
+  .landscape {
+    order: -1; /* Landscape photos will appear first */
+  }
+
+  .timeline-photo.video-container {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    text-align: center; /* Center the video horizontally */
+}
+
+.timeline-photo video {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.menu {
+  position: fixed;
+  top: 50%;
+  left: 10px; /* Adjust the left position as needed */
+  padding: 10px;
+  background-color: #f0f0f0;
+  z-index: 2;
+  transform: translateY(-50%); /* Move the menu up by 50% of its own height */
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 55px; /* Increased font size for better visibility */
+  font-family: 'Roboto', sans-serif; /* Minimalistic font family */
+}
+
+.menu a:hover {
+  color: #ff3366;
+}
+
+.menu a.active {
+  color: #ff3366;
+}
+
